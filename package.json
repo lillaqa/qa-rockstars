@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/lillaqa/qa-rockstars/issues"
   },
-  "homepage": "https://github.com/lillaqa/qa-rockstars#readme"
+  "homepage": "https://github.com/lillaqa/qa-rockstars#readme",
+  "devDependencies": {
+    "cypress": "^3.6.1"
+  }
 }
