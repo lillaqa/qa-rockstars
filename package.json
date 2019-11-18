@@ -1,0 +1,19 @@
+{
+  "name": "qa-rockstars",
+  "version": "1.0.0",
+  "description": "QA Rockstar Hackathon",
+  "main": "index.js",
+  "scripts": {
+    "test": "cypress open"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lillaqa/qa-rockstars.git"
+  },
+  "author": "lillaqa",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/lillaqa/qa-rockstars/issues"
+  },
+  "homepage": "https://github.com/lillaqa/qa-rockstars#readme"
+}
