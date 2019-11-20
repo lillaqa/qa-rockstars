@@ -5,7 +5,7 @@ context("Login data-driven tests", () => {
     cy.visit("https://demo.applitools.com/hackathon.html");
   });
 
-  describe("unhappy flow", () => {
+  describe("the unhappy flow", () => {
     it("empty fields should throw an error", () => {
       cy.get("#log-in").click();
 
@@ -34,7 +34,7 @@ context("Login data-driven tests", () => {
     });
   });
 
-  describe("happy flow", () => {
+  describe("the happy flow", () => {
     it("successful login", () => {
       cy.get("#username").type("username");
       cy.get("#password").type("password");

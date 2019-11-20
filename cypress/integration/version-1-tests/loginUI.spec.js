@@ -5,7 +5,7 @@ context("Login UI tests", () => {
     cy.visit("https://demo.applitools.com/hackathon.html");
   });
 
-  describe("text assertions", () => {
+  describe("text assertion tests", () => {
     it("header should display the correct text", () => {
       cy.get(".auth-header").should("include.text", "Login Form");
     });
