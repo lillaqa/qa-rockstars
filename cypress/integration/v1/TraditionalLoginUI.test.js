@@ -21,5 +21,14 @@ context("Login UI tests", () => {
     it("checkbox label should be correct", () => {
       cy.get("label").contains("Remember Me");
     });
+
+    //ToDo: fix this test: element can't be found
+    it.skip("username placeholder text should be correct", () => {
+      cy.get(".form-control").should("contain", "Enter your username");
+    });
+
+    it("login button should have the correct label", () => {
+      cy.get("button#log-in").should("have.text", "Log In");
+    });
   });
 });
