@@ -1,6 +1,8 @@
 /// <reference types="Cypress" />
+import { LoginPage } from "../v1/page-objects/login-page";
 
 context("Login data-driven tests", () => {
+  const loginPage = new LoginPage();
   beforeEach(() => {
     cy.visit("https://demo.applitools.com/hackathon.html");
     //cy.visit("https://demo.applitools.com/hackathonV2.html");
@@ -37,9 +39,10 @@ context("Login data-driven tests", () => {
 
   describe("the happy flow", () => {
     it("successful login", () => {
-      cy.get("#username").type("username");
-      cy.get("#password").type("password");
-      cy.get("#log-in").click();
+      //cy.get("#username").type("username");
+      //cy.get("#password").type("password");
+      //cy.get("#log-in").click();
+      loginPage.login();
       cy.url().should("include", "/hackathonApp.html");
     });
   });
