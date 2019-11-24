@@ -3,6 +3,7 @@
 context("Login UI tests", () => {
   before(() => {
     cy.visit("https://demo.applitools.com/hackathon.html");
+    //cy.visit("https://demo.applitools.com/hackathonV2.html");
   });
 
   describe("text assertion tests", () => {
