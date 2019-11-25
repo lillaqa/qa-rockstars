@@ -39,9 +39,6 @@ context("Login data-driven tests", () => {
 
   describe("the happy flow", () => {
     it("successful login", () => {
-      //cy.get("#username").type("username");
-      //cy.get("#password").type("password");
-      //cy.get("#log-in").click();
       loginPage.login();
       cy.url().should("include", "/hackathonApp.html");
     });
