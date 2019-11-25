@@ -23,9 +23,20 @@ context("Login UI tests", () => {
       cy.get("label").contains("Remember Me");
     });
 
-    //ToDo: fix this test: element can't be found
-    it.skip("username placeholder text should be correct", () => {
-      cy.get(".form-control").should("contain", "Enter your username");
+    it("username placeholder text should be correct", () => {
+      cy.get("input#username.form-control").should(
+        "have.attr",
+        "placeholder",
+        "Enter your username"
+      );
+    });
+
+    it("password placeholder text should be correct", () => {
+      cy.get("input#password.form-control").should(
+        "have.attr",
+        "placeholder",
+        "Enter your password"
+      );
     });
 
     it("login button should have the correct label", () => {
